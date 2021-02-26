@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main(void)
+{
+    unsigned int people,count;
+    unsigned int sum;
+    double average;
+    int i=1;
+    if(scanf("%u",&people)==1&&people>0)
+        {
+        int grade[people];
+        for(count=0,sum=0;scanf("%d",&grade[i])==1;i++)
+            {
+            if(grade[i]>=60)
+                count++;
+            sum+=grade[i];
+            }
+        average=(double)sum/people;
+        printf("average = %.1f\ncount = %u",average,count);
+         }
+    else if(people==0)
+        printf("average = 0\ncount = 0");
+    
+    return 0;
+}
