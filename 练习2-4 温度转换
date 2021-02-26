@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(void)
+{
+    int fahr=150;
+    int clesius;//初始化的变量与未初始化的变量最好分开声明
+    //*int fahr=150,clesius;
+    
+    clesius=5*(fahr-32)/9;
+    printf("fahr = %d, celsius = %d\n",fahr,clesius);
+    
+    return 0;
+}
